@@ -5,10 +5,10 @@ function Banner() {
     <div className="banner relative w-full h-[500px]   ">
       <Image
         className="object-cover -z-30  "
-        src="https://images.unsplash.com/photo-1672803949246-85b33371c7ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        src="https://images.unsplash.com/photo-1501696461415-6bd6660c6742?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
         alt=""
         layout="fill"
-        // priority="hidden"
+        priority="hidden"
       />
 
       <div className="absolute top-1/2 w-full text-center">

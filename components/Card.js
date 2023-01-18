@@ -4,7 +4,7 @@ function Card({ img, title }) {
   return (
     <div className="card mt-10    ">
       <Image
-        className="rounded-md overflow-scroll"
+        className="rounded-lg overflow-scroll hover:scale-105 transition duration-150"
         width="350"
         height="350"
         alt=""

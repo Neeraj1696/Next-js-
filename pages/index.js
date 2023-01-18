@@ -4,6 +4,8 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import SmallCard from "../components/SmallCard";
 import Card from "../components/Card";
+import Footer from "../components/Footer";
+// import LargeCard from "../components/LargeCard";
 
 function Home({ exploreData, cardData }) {
   return (
@@ -18,7 +20,7 @@ function Home({ exploreData, cardData }) {
         <Banner />
       </>
 
-      <main className="max-w-7xl mx-auto h-[100vh] ">
+      <main className="max-w-7xl mx-auto h-auto ">
         <section className="pt-5">
           <h2 className="text-4xl font-semibold pb-10 ">Explore more</h2>
         </section>
@@ -35,13 +37,15 @@ function Home({ exploreData, cardData }) {
 
         <section className="py-8">
           <h className="text-4xl font-semibold ">Live Anywherre</h>
-          <div className="grid grid-cols-4 gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 overflow-x-scroll ">
+          <div className="grid grid-cols-4 gap-10 sm:grid-cols-2 ml-2 lg:grid-cols-3 xl:grid-cols-4 overflow-x-scroll scrollbar-hide ">
             {cardData?.map((data) => (
               <Card key={data.img} img={data.img} title={data.title} />
             ))}
           </div>
         </section>
+        {/* <LargeCard /> */}
       </main>
+      <Footer />
     </>
   );
 }

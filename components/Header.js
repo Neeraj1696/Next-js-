@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function Header() {
+  const [searchInput, setSearchInput] = useState("");
+  console.log(setSearchInput);
   return (
     <header className="grid grid-cols-3 items-center bg-white p-8 shadow-md sticky top-0 z-50  ">
       <div className="brand-log ">
@@ -8,6 +12,8 @@ function Header() {
       </div>
       <div className="mid flex shadow-xl py-1 items-center  rounded-full ">
         <input
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
           className="w-full outline-none pl-5 "
           type="text"
           placeholder="Start Search here"
